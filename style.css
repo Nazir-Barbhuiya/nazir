@@ -576,6 +576,49 @@ img { max-width: 100%; display: block; }
 }
 .commit__links a:hover { border-color: var(--blue); }
 
+/* ---- Project cards (client sites) ---- */
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 18px;
+  margin-top: 20px;
+}
+
+.proj-card {
+  background: var(--paper-card);
+  border: 1px solid var(--rule-strong);
+  border-radius: 8px;
+  padding: 22px 22px 24px;
+  transition: border-color 0.15s ease, transform 0.15s ease;
+}
+
+.proj-card:hover {
+  border-color: var(--blue);
+  transform: translateY(-2px);
+}
+
+.proj-card__head {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.proj-card__title {
+  font-family: var(--mono);
+  font-size: 1rem;
+  margin: 0;
+  color: var(--ink);
+}
+
+.proj-card__msg {
+  margin: 0 0 14px;
+  color: var(--ink-soft);
+  font-size: 0.92rem;
+}
+
 /* ---- Contact ---- */
 
 .terminal--contact { margin-top: 20px; }
