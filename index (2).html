@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nazir Barbhuiya — Software Developer</title>
+<meta name="description" content="Portfolio of Nazir Barbhuiya, software developer.">
+<link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700;800&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="scanline" aria-hidden="true"></div>
+
+<header class="topbar">
+  <div class="wrap topbar__row">
+    <a href="#top" class="brand">
+      <span class="brand__dot"></span>
+      nazir<span class="brand__at">@</span>barbhuiya
+    </a>
+    <nav class="nav" aria-label="Primary">
+      <a href="#about"><span class="nav__num">01</span>about</a>
+      <a href="#skills"><span class="nav__num">02</span>stack</a>
+      <a href="#projects"><span class="nav__num">03</span>log</a>
+      <a href="#contact"><span class="nav__num">04</span>contact</a>
+    </nav>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- HERO -->
+  <section class="hero wrap" id="hero">
+    <div class="terminal" role="img" aria-label="Terminal window introducing Nazir Barbhuiya">
+      <div class="terminal__bar">
+        <span class="dot dot--r"></span><span class="dot dot--y"></span><span class="dot dot--g"></span>
+        <span class="terminal__title">nazir@barbhuiya: ~</span>
+      </div>
+      <div class="terminal__body">
+        <p class="line"><span class="prompt">$</span> whoami</p>
+        <h1 class="line hero__name">Nazir Barbhuiya</h1>
+        <p class="line hero__role"><span class="prompt">$</span> cat role.txt</p>
+        <p class="line hero__tagline">Software developer building fast, dependable products for the web<span class="cursor" aria-hidden="true"></span></p>
+        <p class="line"><span class="prompt">$</span> ls socials/</p>
+        <p class="line hero__links">
+          <a href="https://github.com/nazirbarbhuiya" target="_blank" rel="noopener">github</a>
+          <a href="#" target="_blank" rel="noopener">linkedin</a>
+          <a href="mailto:hello@example.com">email</a>
+          <a href="assets/resume.pdf" target="_blank" rel="noopener">resume.pdf</a>
+        </p>
+      </div>
+    </div>
+
+    <div class="hero__meta">
+      <div class="hero__badge">
+        <span class="hero__badge-label">status</span>
+        <span class="hero__badge-value"><span class="pulse"></span>open to opportunities</span>
+      </div>
+      <a href="#projects" class="btn btn--primary">view log →</a>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="section" id="about">
+    <div class="wrap">
+      <p class="eyebrow"><span class="eyebrow__num">01</span> about</p>
+      <div class="readme">
+        <div class="readme__bar">
+          <span class="readme__file">README.md</span>
+        </div>
+        <div class="readme__body">
+          <h2 class="readme__h1"># About Nazir</h2>
+          <p>
+            I'm a software developer focused on building clean, reliable interfaces
+            and the systems behind them. I care about code that reads well a year
+            from now, fast feedback loops, and shipping things people actually use.
+          </p>
+          <p>
+            My day-to-day lives somewhere between the browser and the backend —
+            wiring up APIs, shaping data, and sweating the details of the UI that
+            sits on top of it. I like small, well-tested commits and clear
+            documentation almost as much as I like solving the problem itself.
+          </p>
+          <ul class="readme__list">
+            <li><strong>Based in:</strong> — <em>(add your city)</em></li>
+            <li><strong>Currently:</strong> — <em>(add your current role / focus)</em></li>
+            <li><strong>Interested in:</strong> developer tools, performance, accessible design</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section class="section section--alt" id="skills">
+    <div class="wrap">
+      <p class="eyebrow"><span class="eyebrow__num">02</span> stack</p>
+      <div class="pkg">
+        <div class="pkg__bar">
+          <span class="pkg__file">package.json</span>
+        </div>
+        <pre class="pkg__body"><code><span class="tok-brace">{</span>
+  <span class="tok-key">"languages"</span>: <span class="tok-brace">[</span><span class="tok-str">"JavaScript"</span>, <span class="tok-str">"TypeScript"</span>, <span class="tok-str">"Python"</span>, <span class="tok-str">"HTML/CSS"</span><span class="tok-brace">]</span>,
+  <span class="tok-key">"frontend"</span>: <span class="tok-brace">[</span><span class="tok-str">"React"</span>, <span class="tok-str">"Next.js"</span>, <span class="tok-str">"Vue"</span><span class="tok-brace">]</span>,
+  <span class="tok-key">"backend"</span>: <span class="tok-brace">[</span><span class="tok-str">"Node.js"</span>, <span class="tok-str">"Express"</span>, <span class="tok-str">"REST"</span>, <span class="tok-str">"GraphQL"</span><span class="tok-brace">]</span>,
+  <span class="tok-key">"data"</span>: <span class="tok-brace">[</span><span class="tok-str">"PostgreSQL"</span>, <span class="tok-str">"MongoDB"</span>, <span class="tok-str">"Redis"</span><span class="tok-brace">]</span>,
+  <span class="tok-key">"tooling"</span>: <span class="tok-brace">[</span><span class="tok-str">"Git"</span>, <span class="tok-str">"Docker"</span>, <span class="tok-str">"CI/CD"</span>, <span class="tok-str">"Figma"</span><span class="tok-brace">]</span>
+<span class="tok-brace">}</span></code></pre>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS / GIT LOG -->
+  <section class="section" id="projects">
+    <div class="wrap">
+      <p class="eyebrow"><span class="eyebrow__num">03</span> log</p>
+      <h2 class="section__title">git log --projects</h2>
+
+      <ol class="gitlog">
+
+        <li class="commit">
+          <div class="commit__rail">
+            <span class="commit__hash">a3f9c2e</span>
+            <span class="commit__line" aria-hidden="true"></span>
+          </div>
+          <div class="commit__card">
+            <div class="commit__head">
+              <h3 class="commit__title">Project One</h3>
+              <div class="commit__tags">
+                <span class="tag">React</span>
+                <span class="tag">Node.js</span>
+                <span class="tag">PostgreSQL</span>
+              </div>
+            </div>
+            <p class="commit__msg">A short, honest description of what this project does and the
+              problem it solves. Swap this in for a real project — what you built, why, and the
+              impact it had.</p>
+            <div class="commit__links">
+              <a href="#" target="_blank" rel="noopener">live ↗</a>
+              <a href="#" target="_blank" rel="noopener">source ↗</a>
+            </div>
+          </div>
+        </li>
+
+        <li class="commit">
+          <div class="commit__rail">
+            <span class="commit__hash">7d1b48a</span>
+            <span class="commit__line" aria-hidden="true"></span>
+          </div>
+          <div class="commit__card">
+            <div class="commit__head">
+              <h3 class="commit__title">Project Two</h3>
+              <div class="commit__tags">
+                <span class="tag">TypeScript</span>
+                <span class="tag">Next.js</span>
+              </div>
+            </div>
+            <p class="commit__msg">Another project entry. Describe the core feature, any interesting
+              technical constraints, and what you'd improve next time.</p>
+            <div class="commit__links">
+              <a href="#" target="_blank" rel="noopener">live ↗</a>
+              <a href="#" target="_blank" rel="noopener">source ↗</a>
+            </div>
+          </div>
+        </li>
+
+        <li class="commit">
+          <div class="commit__rail">
+            <span class="commit__hash">e02c711</span>
+          </div>
+          <div class="commit__card">
+            <div class="commit__head">
+              <h3 class="commit__title">Project Three</h3>
+              <div class="commit__tags">
+                <span class="tag">Python</span>
+                <span class="tag">API</span>
+              </div>
+            </div>
+            <p class="commit__msg">A third slot for a script, tool, or side project worth showing —
+              keep it concrete: what it does, who it's for, one number if you have it.</p>
+            <div class="commit__links">
+              <a href="#" target="_blank" rel="noopener">live ↗</a>
+              <a href="#" target="_blank" rel="noopener">source ↗</a>
+            </div>
+          </div>
+        </li>
+
+      </ol>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="section section--alt" id="contact">
+    <div class="wrap">
+      <p class="eyebrow"><span class="eyebrow__num">04</span> contact</p>
+      <div class="terminal terminal--contact">
+        <div class="terminal__bar">
+          <span class="dot dot--r"></span><span class="dot dot--y"></span><span class="dot dot--g"></span>
+          <span class="terminal__title">nazir@barbhuiya: ~/contact</span>
+        </div>
+        <div class="terminal__body">
+          <p class="line"><span class="prompt">$</span> echo "let's build something"</p>
+          <p class="line contact__lead">let's build something<span class="cursor" aria-hidden="true"></span></p>
+          <p class="line"><span class="prompt">$</span> git remote -v</p>
+          <div class="contact__grid">
+            <a class="contact__item" href="mailto:hello@example.com">
+              <span class="contact__label">email</span>
+              <span class="contact__value">hello@example.com</span>
+            </a>
+            <a class="contact__item" href="https://github.com/nazirbarbhuiya" target="_blank" rel="noopener">
+              <span class="contact__label">github</span>
+              <span class="contact__value">github.com/nazirbarbhuiya</span>
+            </a>
+            <a class="contact__item" href="#" target="_blank" rel="noopener">
+              <span class="contact__label">linkedin</span>
+              <span class="contact__value">linkedin.com/in/your-handle</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="wrap footer__row">
+    <p>© <span id="year"></span> Nazir Barbhuiya. Built with HTML &amp; CSS.</p>
+    <a href="#top" class="footer__top">back to top ↑</a>
+  </div>
+</footer>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+
+  const navToggle = document.getElementById('navToggle');
+  const nav = document.querySelector('.nav');
+  navToggle.addEventListener('click', () => {
+    const open = document.body.classList.toggle('nav-open');
+    navToggle.setAttribute('aria-expanded', open);
+  });
+  nav.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
+    document.body.classList.remove('nav-open');
+    navToggle.setAttribute('aria-expanded', false);
+  }));
+</script>
+</body>
+</html>
